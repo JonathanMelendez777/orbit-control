@@ -14,10 +14,10 @@ var camera = new THREE.PerspectiveCamera(
 
 //renderer
 var renderer = new THREE.WebGLRenderer();
-//renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setSize(myRender.clientWidth, myRender.clientHeight, true);
-//document.body.appendChild(renderer.domElement);
-myRender.appendChild(renderer.domElement);
+renderer.setSize(window.innerWidth, window.innerHeight);
+//renderer.setSize(myRender.clientWidth, myRender.clientHeight, true);
+document.body.appendChild(renderer.domElement);
+//myRender.appendChild(renderer.domElement);
 
 //add geometry
 var geometry = new THREE.BoxGeometry();
